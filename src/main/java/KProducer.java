@@ -12,7 +12,7 @@ public class KProducer {
     public KProducer(String topic) {
         if (props == null) {
             props = new Properties();
-            props.put("bootstrap.servers", "192.168.2.105:9092");
+            props.put("bootstrap.servers", "localhost:9092");
             props.put("acks", "all");
             props.put("retries", 0);
             props.put("batch.size", 16384);
